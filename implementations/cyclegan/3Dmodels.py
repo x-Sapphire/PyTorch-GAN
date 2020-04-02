@@ -16,6 +16,11 @@ def weights_init_normal(m):
 ######2Dencoder+3Ddecoder#########
 ##### DR:972*768  CT:501*501 #####
 
+class DenseBlock(nn.Module):
+    def __init__(self,in_planes,out_planes):
+        super(DenseBlock,self).__init__()
+        
+        
 class Encoder(nn.Module):
     def __init__(self,...):
         super(Encoder,self).__init__()
